@@ -247,10 +247,9 @@
 
         <footer class="footer">
           <div class="container address-phone-join">
-            <div>
+            <div class="logo-address">
               <a href="./index.html" class="logo-footer">
-                <span class="logo-web">Web</span> Studio</a
-              >
+                <span class="logo-web">Web</span> Studio</a>
               <address class="address-footer">
                 <span class="physical-address">г. Киев, пр-т Леси Украинки, 26</span
                 ><br />
@@ -259,8 +258,8 @@
               </address>
             </div>
          
-           <div>
-            <b class="join">присоединяйтесь</b>
+           <div class="join-container">
+            <b class="join">Присоединяйтесь</b>
             <ul class="social-network-list-footer">
         
              <li class="item">
@@ -291,26 +290,83 @@
                     </svg>
                   </a>
                 </li>
-            
-          </ul>
+            </ul>
           </div>  
         
-          <div class="sub-content">
+          <div class="subscribe-container">
             <b class="subscribe">Подпишитесь на рассылку</b>
-          </div>
+          
+              <form>
+              <div class="form-subscribe">
+                <label for="user-mails"></label>
+                <input type="emails" id="user-mails" placeholder="E-mail" autofocus/>
         
-              <button class="button-subscribe">Подписаться
+              <button type="submit" class="button-subscribe">Подписаться
                 <span><img class="icon-send" src="./images/logo/icon-send.svg" alt="icon-send">
                    </span>
               </button>
+              </form>
+            </div>
+          </div>
         </div>
-    
-        <p class="copyright" style="width: 310px;
-        padding-bottom:20px;
-        padding-top: 20px;
-        margin: 0 auto;
-        text-align: center;color: rgba(255, 255, 255, 0.4);
-    "> 2020 | Developed by GoIT Students </p>
         </footer>
-</body>
-</html>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div>
+              <button data-modal-close class="button-close">
+              <svg class="icon-close" width="11px" height="11px">
+                <use href="./Images/sprite.svg#icon-close_form"></use>
+              </svg></button>
+            </div>
+            <p class="left-data">Оставьте свои данные, мы вам перезвоним</p>
+          
+              <form class="form" autocomplete="off">
+                <div class="form-field">
+                  <input type="text" class="form-input" name="name" id="name" placeholder=" " />
+                  <label for="name" class="form-label">Имя</label>
+                    <svg class="icon-form" width="12px" height="12px">
+                      <use href="./Images/sprite.svg#icon-name_form"></use> 
+                    </svg>
+                </div>
+              
+                <div class="form-field">
+                  <input type="tel" class="form-input" name="telephone" id="telephone" placeholder=" " />
+                  <label for="telephone" class="form-label">Телефон</label>
+                    <svg class="icon-form" width="13px" height="13px">
+                      <use href="./Images/sprite.svg#icon-phome_form"></use> 
+                    </svg>
+                </div>
+          
+                <div class="form-field">
+                  <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
+                  <label for="mail" class="form-label">Почта</label>
+                    <svg class="icon-form" width="15px" height="12px">
+                      <use href="./Images/sprite.svg#icon-mail_form"></use> 
+                    </svg>
+                </div>
+          
+                <div>
+                <textarea name="comment" id="comment" placeholder=" "></textarea>
+                  <label for="comment" class="form-label-comment">Комментарий</label>
+                </div>
+          
+                <div class="agree">
+                  <label class="agree-label">
+          <input class="checkbox" type="checkbox">
+          <span class="icon-checkbox"></span>
+                 Соглашаюсь с рассылкой и принимаю <a href=""><span class="conditions">Условия договора</span></a>
+          </label>
+          </div>
+          
+                <div class="button-centered">
+            <button type="submit" class="button-sent">Отправить</button>
+          </div>
+          
+            </form>
+          </div>
+          </div>
+          
+          <script src="./js/modal.js"></script>
+            </body>
+          </html>
+        
