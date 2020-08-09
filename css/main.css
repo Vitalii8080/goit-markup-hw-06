@@ -683,7 +683,7 @@ textarea:focus {
   top: 8px;
   right: 8px;
   border-radius: 50px;
-  fill: #000000;
+  fill:#000000;
 }
 
 .button-close:hover {
@@ -766,7 +766,7 @@ textarea {
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  background-image: url("../Images/svg/icon_check.svg ");
+  background-image: url("../images/icon-check.jpg");
   background-size: contain;
 }
 
