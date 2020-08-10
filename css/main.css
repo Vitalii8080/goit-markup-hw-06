@@ -232,7 +232,6 @@ img {
   button {
     border: none;
     outline: none;
-    padding: 6px 23px;
     background-color: var(--accent-grey);
     font-family: inherit;
     font-size: 16px;
@@ -690,6 +689,7 @@ textarea:focus {
   fill: var(--accent-color);
   background: var(--primary-white-color);
 }
+
 
 .form-input:focus ~ .icon-form {
   fill: var(--accent-color);
